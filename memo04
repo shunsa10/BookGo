@@ -1,0 +1,21 @@
+git pushして
+herokuにログイン
+
+git push heroku mainデプロイ
+url取得
+
+heroku pg:infoでデータベースの確認
+
+
+example.sqlを元にデータベースの作成
+heroku addons:create heroku-postgresql:hobby-dev
+
+
+テーブル確認
+heroku pg:psql -c "\d"
+
+ヘロクのpsqlに接続
+heroku pg:psql
+
+元に実行
+\i example.sql
