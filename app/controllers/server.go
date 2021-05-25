@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"html/template"
 	"net/http"
+	"os"
 	"regexp"
 	"strconv"
 	"todo/app/models"
@@ -80,6 +81,9 @@ func StartMainServer() error  {
 	//ハンドラ関数をチェインさせている
 	//末尾の/はurlが一致しないといけないことを意味している
 
+//herou psql
+	port := os.Getenv("PORT")
+
 	//httpのメソット立ち上げに使う　コロンとポート番号を渡す  2はデフォルトのマルチプレクサ
-	return http.ListenAndServe(":" + config.Config.Port, nil)
+	return http.ListenAndServe(":" + port, nil)
 }
