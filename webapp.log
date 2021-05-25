@@ -1,0 +1,3206 @@
+2021/05/17 09:42:31 main.go:15: test
+2021/05/18 12:51:20 users.go:37: sql: converting argument $1 type: unsupported type func() uuid.UUID, a func
+2021/05/20 15:03:42 server.go:3139: http: panic serving 127.0.0.1:63659: template: public_navbar.html:7: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc00010f4a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc000098150)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0000a00e0, 0x44aaa80, 0x4593ab0, 0xc000051aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0000a00e0, 0xc00009c000)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0000a00e0, 0xc00009c000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0000a00e0, 0xc00009c000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0000a00e0, 0xc00009c000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010f4a0, 0x45a0360, 0xc000096000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:03:42 server.go:3139: http: panic serving 127.0.0.1:63660: template: public_navbar.html:7: unexpected EOF
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc00010f540)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc000013190)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc00015c1c0, 0x44aaa80, 0x4593ab0, 0xc000117aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc00015c1c0, 0xc000154100)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc00015c1c0, 0xc000154100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc00015c1c0, 0xc000154100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc00015c1c0, 0xc000154100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010f540, 0x45a0360, 0xc000028540)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:03:42 server.go:3139: http: panic serving 127.0.0.1:63661: template: public_navbar.html:7: unexpected EOF
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc0000d8000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc000098280)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0000a02a0, 0x44aaa80, 0x4593ab0, 0xc000051aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0000a02a0, 0xc00009c100)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0000a02a0, 0xc00009c100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0000a02a0, 0xc00009c100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0000a02a0, 0xc00009c100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000d8000, 0x45a0360, 0xc000096400)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:03:44 server.go:3139: http: panic serving 127.0.0.1:63662: template: public_navbar.html:7: unexpected EOF
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc0001bc000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc000190190)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0001ca0e0, 0x44aaa80, 0x4593ab0, 0xc000051aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0001ca0e0, 0xc00009c300)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0001ca0e0, 0xc00009c300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0001ca0e0, 0xc00009c300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0001ca0e0, 0xc00009c300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001bc000, 0x45a0360, 0xc000096780)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:03:44 server.go:3139: http: panic serving 127.0.0.1:63663: template: public_navbar.html:7: unexpected EOF
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc0001bc0a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc000013280)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0000a0460, 0x44aaa80, 0x4593ab0, 0xc0001c2aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0000a0460, 0xc0001c6000)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0000a0460, 0xc0001c6000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0000a0460, 0xc0001c6000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0000a0460, 0xc0001c6000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001bc0a0, 0x45a0360, 0xc0001b8040)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:03:44 server.go:3139: http: panic serving 127.0.0.1:63664: template: public_navbar.html:7: unexpected EOF
+goroutine 39 [running]:
+net/http.(*conn).serve.func1(0xc0001bc140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc000190300)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0001ca2a0, 0x44aaa80, 0x4593ab0, 0xc000051aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0001ca2a0, 0xc0001c6100)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0001ca2a0, 0xc0001c6100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0001ca2a0, 0xc0001c6100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0001ca2a0, 0xc0001c6100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001bc140, 0x45a0360, 0xc0001b83c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:03:48 server.go:3139: http: panic serving 127.0.0.1:63667: template: public_navbar.html:7: unexpected EOF
+goroutine 27 [running]:
+net/http.(*conn).serve.func1(0xc0000d80a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc0001903c0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0000a0620, 0x44aaa80, 0x4593ab0, 0xc000051aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0000a0620, 0xc0001c6200)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0000a0620, 0xc0001c6200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0000a0620, 0xc0001c6200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0000a0620, 0xc0001c6200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000d80a0, 0x45a0360, 0xc0001b8740)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:03:48 server.go:3139: http: panic serving 127.0.0.1:63668: template: public_navbar.html:7: unexpected EOF
+goroutine 28 [running]:
+net/http.(*conn).serve.func1(0xc0000d8140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc0000133e0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc00015c380, 0x44aaa80, 0x4593ab0, 0xc0001c2aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc00015c380, 0xc00009c400)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc00015c380, 0xc00009c400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc00015c380, 0xc00009c400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc00015c380, 0xc00009c400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000d8140, 0x45a0360, 0xc000096940)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:03:48 server.go:3139: http: panic serving 127.0.0.1:63669: template: public_navbar.html:7: unexpected EOF
+goroutine 31 [running]:
+net/http.(*conn).serve.func1(0xc0000d81e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc000098530)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0000a07e0, 0x44aaa80, 0x4593ab0, 0xc000051aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0000a07e0, 0xc00009c500)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0000a07e0, 0xc00009c500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0000a07e0, 0xc00009c500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0000a07e0, 0xc00009c500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000d81e0, 0x45a0360, 0xc000096c00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:03:48 server.go:3139: http: panic serving 127.0.0.1:63670: template: public_navbar.html:7: unexpected EOF
+goroutine 44 [running]:
+net/http.(*conn).serve.func1(0xc0001bc1e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc000190530)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0001ca460, 0x44aaa80, 0x4593ab0, 0xc000051aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0001ca460, 0xc00009c600)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0001ca460, 0xc00009c600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0001ca460, 0xc00009c600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0001ca460, 0xc00009c600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001bc1e0, 0x45a0360, 0xc000096f80)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:03:48 server.go:3139: http: panic serving 127.0.0.1:63671: template: public_navbar.html:7: unexpected EOF
+goroutine 45 [running]:
+net/http.(*conn).serve.func1(0xc0001bc280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc0000986a0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0000a09a0, 0x44aaa80, 0x4593ab0, 0xc0001c3aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0000a09a0, 0xc0001c6300)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0000a09a0, 0xc0001c6300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0000a09a0, 0xc0001c6300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0000a09a0, 0xc0001c6300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001bc280, 0x45a0360, 0xc0001b8880)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:03:48 server.go:3139: http: panic serving 127.0.0.1:63672: template: public_navbar.html:7: unexpected EOF
+goroutine 54 [running]:
+net/http.(*conn).serve.func1(0xc0000d8280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc000098810)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0000a0b60, 0x44aaa80, 0x4593ab0, 0xc0001c3aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0000a0b60, 0xc00009c700)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0000a0b60, 0xc00009c700)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0000a0b60, 0xc00009c700)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0000a0b60, 0xc00009c700)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000d8280, 0x45a0360, 0xc000097300)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:03:53 server.go:3139: http: panic serving 127.0.0.1:63673: template: public_navbar.html:7: unexpected EOF
+goroutine 49 [running]:
+net/http.(*conn).serve.func1(0xc0001bc320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc000098980)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0000a0d20, 0x44aaa80, 0x4593ab0, 0xc000051aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0000a0d20, 0xc0001c6400)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0000a0d20, 0xc0001c6400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0000a0d20, 0xc0001c6400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0000a0d20, 0xc0001c6400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001bc320, 0x45a0360, 0xc0001b8c00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:03:53 server.go:3139: http: panic serving 127.0.0.1:63674: template: public_navbar.html:7: unexpected EOF
+goroutine 58 [running]:
+net/http.(*conn).serve.func1(0xc0000d8320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc000190690)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0001ca620, 0x44aaa80, 0x4593ab0, 0xc0001c3aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0001ca620, 0xc00009c800)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0001ca620, 0xc00009c800)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0001ca620, 0xc00009c800)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0001ca620, 0xc00009c800)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000d8320, 0x45a0360, 0xc000097680)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:03:53 server.go:3139: http: panic serving 127.0.0.1:63675: template: public_navbar.html:7: unexpected EOF
+goroutine 16 [running]:
+net/http.(*conn).serve.func1(0xc00010f5e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc0001907f0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0001ca7e0, 0x44aaa80, 0x4593ab0, 0xc0001c2aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0001ca7e0, 0xc000154200)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0001ca7e0, 0xc000154200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0001ca7e0, 0xc000154200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0001ca7e0, 0xc000154200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010f5e0, 0x45a0360, 0xc000028dc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:11 server.go:3139: http: panic serving 127.0.0.1:63680: template: public_navbar.html:7: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc00010d360)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc00009a150)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0000a20e0, 0x44aaa80, 0x4593ab0, 0xc000051aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0000a20e0, 0xc00009e000)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0000a20e0, 0xc00009e000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0000a20e0, 0xc00009e000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0000a20e0, 0xc00009e000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010d360, 0x45a0360, 0xc000098000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:11 server.go:3139: http: panic serving 127.0.0.1:63681: template: public_navbar.html:7: unexpected EOF
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc00010d400)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc00009a2a0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0000a22a0, 0x44aaa80, 0x4593ab0, 0xc000115aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0000a22a0, 0xc000154100)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0000a22a0, 0xc000154100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0000a22a0, 0xc000154100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0000a22a0, 0xc000154100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010d400, 0x45a0360, 0xc000028540)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:11 server.go:3139: http: panic serving 127.0.0.1:63682: template: public_navbar.html:7: unexpected EOF
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0xc00010d4a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc0001900e0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc00015c1c0, 0x44aaa80, 0x4593ab0, 0xc000055aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc00015c1c0, 0xc000154200)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc00015c1c0, 0xc000154200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc00015c1c0, 0xc000154200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc00015c1c0, 0xc000154200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010d4a0, 0x45a0360, 0xc000028600)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:12 server.go:3139: http: panic serving 127.0.0.1:63683: template: public_navbar.html:7: unexpected EOF
+goroutine 24 [running]:
+net/http.(*conn).serve.func1(0xc0000e8000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc0000131a0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0000a2460, 0x44aaa80, 0x4593ab0, 0xc000051aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0000a2460, 0xc00009e100)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0000a2460, 0xc00009e100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0000a2460, 0xc00009e100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0000a2460, 0xc00009e100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000e8000, 0x45a0360, 0xc000098700)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:12 server.go:3139: http: panic serving 127.0.0.1:63684: template: public_navbar.html:7: unexpected EOF
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0xc0000e80a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc00009a490)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0000a2620, 0x44aaa80, 0x4593ab0, 0xc000052aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0000a2620, 0xc00009e200)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0000a2620, 0xc00009e200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0000a2620, 0xc00009e200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0000a2620, 0xc00009e200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000e80a0, 0x45a0360, 0xc000098780)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:12 server.go:3139: http: panic serving 127.0.0.1:63685: template: public_navbar.html:7: unexpected EOF
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc0001de000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc000013280)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0001ec0e0, 0x44aaa80, 0x4593ab0, 0xc0001e4aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0001ec0e0, 0xc0001e8000)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0001ec0e0, 0xc0001e8000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0001ec0e0, 0xc0001e8000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0001ec0e0, 0xc0001e8000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001de000, 0x45a0360, 0xc0001c01c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:12 server.go:3139: http: panic serving 127.0.0.1:63686: template: public_navbar.html:7: unexpected EOF
+goroutine 38 [running]:
+net/http.(*conn).serve.func1(0xc0001de0a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc00009a5a0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc00015c380, 0x44aaa80, 0x4593ab0, 0xc000052aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc00015c380, 0xc00009e400)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc00015c380, 0xc00009e400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc00015c380, 0xc00009e400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc00015c380, 0xc00009e400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001de0a0, 0x45a0360, 0xc000098c40)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:12 server.go:3139: http: panic serving 127.0.0.1:63687: template: public_navbar.html:7: unexpected EOF
+goroutine 14 [running]:
+net/http.(*conn).serve.func1(0xc00010d540)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc00031c140)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0003060e0, 0x44aaa80, 0x4593ab0, 0xc000055aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0003060e0, 0xc000154300)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0003060e0, 0xc000154300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0003060e0, 0xc000154300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0003060e0, 0xc000154300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010d540, 0x45a0360, 0xc000028b80)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:12 server.go:3139: http: panic serving 127.0.0.1:63688: template: public_navbar.html:7: unexpected EOF
+goroutine 66 [running]:
+net/http.(*conn).serve.func1(0xc00010d5e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc00031c210)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc00015c540, 0x44aaa80, 0x4593ab0, 0xc0001e0aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc00015c540, 0xc000154400)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc00015c540, 0xc000154400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc00015c540, 0xc000154400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc00015c540, 0xc000154400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010d5e0, 0x45a0360, 0xc000028d40)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:13 server.go:3139: http: panic serving 127.0.0.1:63689: template: public_navbar.html:7: unexpected EOF
+goroutine 32 [running]:
+net/http.(*conn).serve.func1(0xc0000e8140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc000013480)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0000a27e0, 0x44aaa80, 0x4593ab0, 0xc000051aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0000a27e0, 0xc00009e500)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0000a27e0, 0xc00009e500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0000a27e0, 0xc00009e500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0000a27e0, 0xc00009e500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000e8140, 0x45a0360, 0xc000098e80)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:13 server.go:3139: http: panic serving 127.0.0.1:63690: template: public_navbar.html:7: unexpected EOF
+goroutine 33 [running]:
+net/http.(*conn).serve.func1(0xc0000e81e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc00009a790)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0000a29a0, 0x44aaa80, 0x4593ab0, 0xc000053aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0000a29a0, 0xc00009e600)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0000a29a0, 0xc00009e600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0000a29a0, 0xc00009e600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0000a29a0, 0xc00009e600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000e81e0, 0x45a0360, 0xc000098f00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:13 server.go:3139: http: panic serving 127.0.0.1:63691: template: public_navbar.html:7: unexpected EOF
+goroutine 54 [running]:
+net/http.(*conn).serve.func1(0xc000360000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc0000135f0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc00015c700, 0x44aaa80, 0x4593ab0, 0xc000055aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc00015c700, 0xc000362000)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc00015c700, 0xc000362000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc00015c700, 0xc000362000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc00015c700, 0xc000362000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000360000, 0x45a0360, 0xc0003184c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:13 server.go:3139: http: panic serving 127.0.0.1:63692: template: public_navbar.html:7: unexpected EOF
+goroutine 55 [running]:
+net/http.(*conn).serve.func1(0xc0003600a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc00031c3a0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0003062a0, 0x44aaa80, 0x4593ab0, 0xc0001e1aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0003062a0, 0xc000362100)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0003062a0, 0xc000362100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0003062a0, 0xc000362100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0003062a0, 0xc000362100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003600a0, 0x45a0360, 0xc000318540)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:13 server.go:3139: http: panic serving 127.0.0.1:63693: template: public_navbar.html:7: unexpected EOF
+goroutine 56 [running]:
+net/http.(*conn).serve.func1(0xc000360140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc000013710)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc00015c8c0, 0x44aaa80, 0x4593ab0, 0xc0001e2aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc00015c8c0, 0xc000362200)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc00015c8c0, 0xc000362200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc00015c8c0, 0xc000362200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc00015c8c0, 0xc000362200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000360140, 0x45a0360, 0xc0003185c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:13 server.go:3139: http: panic serving 127.0.0.1:63694: template: public_navbar.html:7: unexpected EOF
+goroutine 87 [running]:
+net/http.(*conn).serve.func1(0xc0000e8280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc00031c4b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0000a2b60, 0x44aaa80, 0x4593ab0, 0xc000053aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0000a2b60, 0xc00009e700)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0000a2b60, 0xc00009e700)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0000a2b60, 0xc00009e700)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0000a2b60, 0xc00009e700)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000e8280, 0x45a0360, 0xc0000993c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:14 server.go:3139: http: panic serving 127.0.0.1:63695: template: public_navbar.html:7: unexpected EOF
+goroutine 76 [running]:
+net/http.(*conn).serve.func1(0xc00010d680)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc00009a910)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc000306460, 0x44aaa80, 0x4593ab0, 0xc0001e1aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc000306460, 0xc000362300)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc000306460, 0xc000362300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc000306460, 0xc000362300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc000306460, 0xc000362300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010d680, 0x45a0360, 0xc000318c00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:14 server.go:3139: http: panic serving 127.0.0.1:63696: template: public_navbar.html:7: unexpected EOF
+goroutine 77 [running]:
+net/http.(*conn).serve.func1(0xc00010d720)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc00031c630)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc00015ca80, 0x44aaa80, 0x4593ab0, 0xc0001e2aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc00015ca80, 0xc000154500)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc00015ca80, 0xc000154500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc00015ca80, 0xc000154500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc00015ca80, 0xc000154500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010d720, 0x45a0360, 0xc0000295c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:14 server.go:3139: http: panic serving 127.0.0.1:63697: template: public_navbar.html:7: unexpected EOF
+goroutine 91 [running]:
+net/http.(*conn).serve.func1(0xc0000e8320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc00031c790)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc000306620, 0x44aaa80, 0x4593ab0, 0xc000053aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc000306620, 0xc00009e800)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc000306620, 0xc00009e800)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc000306620, 0xc00009e800)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc000306620, 0xc00009e800)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000e8320, 0x45a0360, 0xc000099740)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:14 server.go:3139: http: panic serving 127.0.0.1:63698: template: public_navbar.html:7: unexpected EOF
+goroutine 80 [running]:
+net/http.(*conn).serve.func1(0xc00010d7c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc00009aa00)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc00015cc40, 0x44aaa80, 0x4593ab0, 0xc000053aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc00015cc40, 0xc000362400)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc00015cc40, 0xc000362400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc00015cc40, 0xc000362400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc00015cc40, 0xc000362400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010d7c0, 0x45a0360, 0xc000319280)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:14 server.go:3139: http: panic serving 127.0.0.1:63699: template: public_navbar.html:7: unexpected EOF
+goroutine 81 [running]:
+net/http.(*conn).serve.func1(0xc00010d860)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc00009ab60)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0000a2d20, 0x44aaa80, 0x4593ab0, 0xc0001e2aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0000a2d20, 0xc000154600)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0000a2d20, 0xc000154600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0000a2d20, 0xc000154600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0000a2d20, 0xc000154600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010d860, 0x45a0360, 0xc000029780)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:14 server.go:3139: http: panic serving 127.0.0.1:63700: template: public_navbar.html:7: unexpected EOF
+goroutine 99 [running]:
+net/http.(*conn).serve.func1(0xc0003601e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc00031c910)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0003067e0, 0x44aaa80, 0x4593ab0, 0xc0001e1aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0003067e0, 0xc000362500)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0003067e0, 0xc000362500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0003067e0, 0xc000362500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0003067e0, 0xc000362500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003601e0, 0x45a0360, 0xc000319300)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:44 server.go:3139: http: panic serving 127.0.0.1:63702: template: public_navbar.html:7: unexpected EOF
+goroutine 116 [running]:
+net/http.(*conn).serve.func1(0xc00010d900)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc000013980)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc00015cd20, 0x44aaa80, 0x4593ab0, 0xc0001e1aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc00015cd20, 0xc000362600)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc00015cd20, 0xc000362600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc00015cd20, 0xc000362600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc00015cd20, 0xc000362600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010d900, 0x45a0360, 0xc000319680)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:44 server.go:3139: http: panic serving 127.0.0.1:63703: template: public_navbar.html:7: unexpected EOF
+goroutine 117 [running]:
+net/http.(*conn).serve.func1(0xc00010d9a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc00009acc0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0000a2e00, 0x44aaa80, 0x4593ab0, 0xc000053aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0000a2e00, 0xc000154700)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0000a2e00, 0xc000154700)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0000a2e00, 0xc000154700)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0000a2e00, 0xc000154700)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010d9a0, 0x45a0360, 0xc000029940)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:04:44 server.go:3139: http: panic serving 127.0.0.1:63704: template: public_navbar.html:7: unexpected EOF
+goroutine 121 [running]:
+net/http.(*conn).serve.func1(0xc00010da40)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc00009ae20)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0000a2ee0, 0x44aaa80, 0x4593ab0, 0xc0001e1aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0000a2ee0, 0xc000154800)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0000a2ee0, 0xc000154800)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0000a2ee0, 0xc000154800)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0000a2ee0, 0xc000154800)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010da40, 0x45a0360, 0xc000029cc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:05:37 server.go:3139: http: panic serving 127.0.0.1:63711: template: public_navbar.html:7: unexpected EOF
+goroutine 122 [running]:
+net/http.(*conn).serve.func1(0xc00010dae0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc000013b10)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc00015cee0, 0x44aaa80, 0x4593ab0, 0xc000055aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc00015cee0, 0xc000154900)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc00015cee0, 0xc000154900)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc00015cee0, 0xc000154900)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc00015cee0, 0xc000154900)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010dae0, 0x45a0360, 0xc000029d40)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:05:37 server.go:3139: http: panic serving 127.0.0.1:63712: template: public_navbar.html:7: unexpected EOF
+goroutine 123 [running]:
+net/http.(*conn).serve.func1(0xc00010db80)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc00009aef0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc00015d0a0, 0x44aaa80, 0x4593ab0, 0xc0001e0aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc00015d0a0, 0xc000154a00)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc00015d0a0, 0xc000154a00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc00015d0a0, 0xc000154a00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc00015d0a0, 0xc000154a00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010db80, 0x45a0360, 0xc000029dc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/20 15:05:37 server.go:3139: http: panic serving 127.0.0.1:63713: template: public_navbar.html:7: unexpected EOF
+goroutine 39 [running]:
+net/http.(*conn).serve.func1(0xc0001de140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44bb5a0, 0xc00009afe0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x459fbb0, 0xc0001ec2a0, 0x44aaa80, 0x4593ab0, 0xc0001e4aa8, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:18 +0x2ce
+todo/app/controllers.top(0x459fbb0, 0xc0001ec2a0, 0xc0001e8100)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:17 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4543960, 0x459fbb0, 0xc0001ec2a0, 0xc0001e8100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47b9ea0, 0x459fbb0, 0xc0001ec2a0, 0xc0001e8100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015c000, 0x459fbb0, 0xc0001ec2a0, 0xc0001e8100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001de140, 0x45a0360, 0xc0001c0380)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:30:08 server.go:3139: http: panic serving 127.0.0.1:54473: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0000b94a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc00035d140)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc0001aca80, 0x44fc4c0, 0xc00035e800, 0xc0001e1950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc0001aca80, 0xc000394100, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc0001aca80, 0xc000394100)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a78d0, 0xc0001aca80, 0xc000394100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc0001aca80, 0xc000394100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a78d0, 0xc0001aca80, 0xc000394100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000b94a0, 0x45a8080, 0xc00018c000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:30:08 server.go:3139: http: panic serving 127.0.0.1:54475: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 23 [running]:
+net/http.(*conn).serve.func1(0xc0000b95e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc000274e10)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc0002342a0, 0x44fc4c0, 0xc00022cb40, 0xc000243950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc0002342a0, 0xc00023a100, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc0002342a0, 0xc00023a100)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a78d0, 0xc0002342a0, 0xc00023a100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc0002342a0, 0xc00023a100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a78d0, 0xc0002342a0, 0xc00023a100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000b95e0, 0x45a8080, 0xc0000d8680)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:30:08 server.go:3139: http: panic serving 127.0.0.1:54474: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc0000b9540)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0003a6300)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc000234380, 0x44fc4c0, 0xc00022cf00, 0xc0000c1950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc000234380, 0xc000102300, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc000234380, 0xc000102300)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a78d0, 0xc000234380, 0xc000102300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc000234380, 0xc000102300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a78d0, 0xc000234380, 0xc000102300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000b9540, 0x45a8080, 0xc0000d8540)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:30:08 server.go:3139: http: panic serving 127.0.0.1:54476: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc0003a2140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0002754d0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc0003862a0, 0x44fc4c0, 0xc000028ac0, 0xc00023f950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc0003862a0, 0xc000394200, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc0003862a0, 0xc000394200)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a78d0, 0xc0003862a0, 0xc000394200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc0003862a0, 0xc000394200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a78d0, 0xc0003862a0, 0xc000394200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003a2140, 0x45a8080, 0xc000028900)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:30:09 server.go:3139: http: panic serving 127.0.0.1:54477: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 59 [running]:
+net/http.(*conn).serve.func1(0xc000272140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc000275da0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc000234460, 0x44fc4c0, 0xc00022d380, 0xc0000c1950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc000234460, 0xc00023a300, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc000234460, 0xc00023a300)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a78d0, 0xc000234460, 0xc00023a300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc000234460, 0xc00023a300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a78d0, 0xc000234460, 0xc00023a300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000272140, 0x45a8080, 0xc00022d100)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:30:09 server.go:3139: http: panic serving 127.0.0.1:54478: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 60 [running]:
+net/http.(*conn).serve.func1(0xc0002721e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc000275e30)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc000386380, 0x44fc4c0, 0xc000028e00, 0xc00023f950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc000386380, 0xc00023a400, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc000386380, 0xc00023a400)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a78d0, 0xc000386380, 0xc00023a400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc000386380, 0xc00023a400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a78d0, 0xc000386380, 0xc00023a400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002721e0, 0x45a8080, 0xc00022d180)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:30:09 server.go:3139: http: panic serving 127.0.0.1:54479: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 13 [running]:
+net/http.(*conn).serve.func1(0xc0003a21e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc00035d230)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc000234540, 0x44fc4c0, 0xc00022d800, 0xc0000c1950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc000234540, 0xc000394300, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc000234540, 0xc000394300)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a78d0, 0xc000234540, 0xc000394300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc000234540, 0xc000394300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a78d0, 0xc000234540, 0xc000394300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003a21e0, 0x45a8080, 0xc000028f00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:30:11 server.go:3139: http: panic serving 127.0.0.1:54482: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 14 [running]:
+net/http.(*conn).serve.func1(0xc0003a2280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0003a79b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc000386460, 0x44fc4c0, 0xc000029240, 0xc000241950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc000386460, 0xc000394400, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc000386460, 0xc000394400)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a78d0, 0xc000386460, 0xc000394400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc000386460, 0xc000394400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a78d0, 0xc000386460, 0xc000394400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003a2280, 0x45a8080, 0xc000028f80)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:30:11 server.go:3139: http: panic serving 127.0.0.1:54483: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 15 [running]:
+net/http.(*conn).serve.func1(0xc0003a2320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc00035d320)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc000234620, 0x44fc4c0, 0xc00022db00, 0xc0000c1950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc000234620, 0xc000394500, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc000234620, 0xc000394500)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a78d0, 0xc000234620, 0xc000394500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc000234620, 0xc000394500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a78d0, 0xc000234620, 0xc000394500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003a2320, 0x45a8080, 0xc000029000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:30:11 server.go:3139: http: panic serving 127.0.0.1:54484: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 99 [running]:
+net/http.(*conn).serve.func1(0xc000272280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc00027d2c0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc000234700, 0x44fc4c0, 0xc00022de80, 0xc0000c1950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc000234700, 0xc00023a600, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc000234700, 0xc00023a600)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a78d0, 0xc000234700, 0xc00023a600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc000234700, 0xc00023a600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a78d0, 0xc000234700, 0xc00023a600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000272280, 0x45a8080, 0xc00022dc80)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:30:11 server.go:3139: http: panic serving 127.0.0.1:54485: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 102 [running]:
+net/http.(*conn).serve.func1(0xc000272320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc00027dad0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc0002347e0, 0x44fc4c0, 0xc0004462c0, 0xc0000c1950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc0002347e0, 0xc000195100, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc0002347e0, 0xc000195100)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a78d0, 0xc0002347e0, 0xc000195100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc0002347e0, 0xc000195100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a78d0, 0xc0002347e0, 0xc000195100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000272320, 0x45a8080, 0xc00035ec40)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:30:11 server.go:3139: http: panic serving 127.0.0.1:54486: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 103 [running]:
+net/http.(*conn).serve.func1(0xc0002723c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc00027db60)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc0001acb60, 0x44fc4c0, 0xc00035ee40, 0xc00023f950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc0001acb60, 0xc00023a800, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc0001acb60, 0xc00023a800)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a78d0, 0xc0001acb60, 0xc00023a800)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc0001acb60, 0xc00023a800)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a78d0, 0xc0001acb60, 0xc00023a800)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002723c0, 0x45a8080, 0xc0004460c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:30:11 server.go:3139: http: panic serving 127.0.0.1:54487: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 83 [running]:
+net/http.(*conn).serve.func1(0xc0003a23c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0003da180)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc000386540, 0x44fc4c0, 0xc000029680, 0xc000241950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc000386540, 0xc000394700, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc000386540, 0xc000394700)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a78d0, 0xc000386540, 0xc000394700)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc000386540, 0xc000394700)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a78d0, 0xc000386540, 0xc000394700)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003a23c0, 0x45a8080, 0xc000029480)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:30:19 server.go:3139: http: panic serving 127.0.0.1:54488: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 70 [running]:
+net/http.(*conn).serve.func1(0xc0001ea3c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc00009b740)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc0001ac000, 0x44fc4c0, 0xc0000281c0, 0xc0003c3950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc0001ac000, 0xc000194000, 0xd)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc0001ac000, 0xc000194000)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a78d0, 0xc0001ac000, 0xc000194000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc0001ac000, 0xc000194000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a78d0, 0xc0001ac000, 0xc000194000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001ea3c0, 0x45a8080, 0xc0000298c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:30:19 server.go:3139: http: panic serving 127.0.0.1:54489: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 71 [running]:
+net/http.(*conn).serve.func1(0xc0001ea460)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0006906f0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc0001160e0, 0x44fc4c0, 0xc0000d84c0, 0xc0000bd950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc0001160e0, 0xc000195300, 0xd)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc0001160e0, 0xc000195300)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a78d0, 0xc0001160e0, 0xc000195300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc0001160e0, 0xc000195300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a78d0, 0xc0001160e0, 0xc000195300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001ea460, 0x45a8080, 0xc00035efc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:30:19 server.go:3139: http: panic serving 127.0.0.1:54490: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 127 [running]:
+net/http.(*conn).serve.func1(0xc0000b8280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0004acde0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc0001ac0e0, 0x44fc4c0, 0xc000028580, 0xc0004d1950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc0001ac0e0, 0xc0004c6000, 0xd)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc0001ac0e0, 0xc0004c6000)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a78d0, 0xc0001ac0e0, 0xc0004c6000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc0001ac0e0, 0xc0004c6000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a78d0, 0xc0001ac0e0, 0xc0004c6000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000b8280, 0x45a8080, 0xc000028380)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:30:20 server.go:3139: http: panic serving 127.0.0.1:54491: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 88 [running]:
+net/http.(*conn).serve.func1(0xc0001ea000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc00009b830)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc0001161c0, 0x44fc4c0, 0xc0000d8a80, 0xc0000bd950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc0001161c0, 0xc00007c000, 0xd)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc0001161c0, 0xc00007c000)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a78d0, 0xc0001161c0, 0xc00007c000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc0001161c0, 0xc00007c000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a78d0, 0xc0001161c0, 0xc00007c000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001ea000, 0x45a8080, 0xc0000d8800)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:30:20 server.go:3139: http: panic serving 127.0.0.1:54492: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 89 [running]:
+net/http.(*conn).serve.func1(0xc0001ea0a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0004ad500)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc0001ac1c0, 0x44fc4c0, 0xc000028940, 0xc0004d1950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc0001ac1c0, 0xc00007c100, 0xd)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc0001ac1c0, 0xc00007c100)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a78d0, 0xc0001ac1c0, 0xc00007c100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc0001ac1c0, 0xc00007c100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a78d0, 0xc0001ac1c0, 0xc00007c100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001ea0a0, 0x45a8080, 0xc0000d8880)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:30:20 server.go:3139: http: panic serving 127.0.0.1:54493: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 92 [running]:
+net/http.(*conn).serve.func1(0xc0001ea140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc000691680)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc0001162a0, 0x44fc4c0, 0xc0000d8e00, 0xc0000bd950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc0001162a0, 0xc00007c200, 0xd)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc0001162a0, 0xc00007c200)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a78d0, 0xc0001162a0, 0xc00007c200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc0001162a0, 0xc00007c200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a78d0, 0xc0001162a0, 0xc00007c200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001ea140, 0x45a8080, 0xc0000d8c00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:39 server.go:3139: http: panic serving 127.0.0.1:54510: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc0001255e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0002a7410)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc00029c540, 0x44fc4c0, 0xc000028d80, 0xc000191950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc00029c540, 0xc000172c00, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc00029c540, 0xc000172c00)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc00029c540, 0xc000172c00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc00029c540, 0xc000172c00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc00029c540, 0xc000172c00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001255e0, 0x45a8080, 0xc000146540)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:39 server.go:3139: http: panic serving 127.0.0.1:54509: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc000125540)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0001f17d0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc0000ba9a0, 0x44fc4c0, 0xc00009ffc0, 0xc000195950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc0000ba9a0, 0xc000172400, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc0000ba9a0, 0xc000172400)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc0000ba9a0, 0xc000172400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc0000ba9a0, 0xc000172400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc0000ba9a0, 0xc000172400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000125540, 0x45a8080, 0xc00009e000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:39 server.go:3139: http: panic serving 127.0.0.1:54513: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 57 [running]:
+net/http.(*conn).serve.func1(0xc000125cc0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0001f1f80)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc000186a80, 0x44fc4c0, 0xc0001db100, 0xc00012d950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc000186a80, 0xc000172d00, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc000186a80, 0xc000172d00)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc000186a80, 0xc000172d00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc000186a80, 0xc000172d00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc000186a80, 0xc000172d00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000125cc0, 0x45a8080, 0xc0001daf40)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:40 server.go:3139: http: panic serving 127.0.0.1:54514: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 60 [running]:
+net/http.(*conn).serve.func1(0xc000125d60)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc000208810)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc00029c620, 0x44fc4c0, 0xc0000291c0, 0xc0002d1950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc00029c620, 0xc000296900, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc00029c620, 0xc000296900)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc00029c620, 0xc000296900)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc00029c620, 0xc000296900)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc00029c620, 0xc000296900)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000125d60, 0x45a8080, 0xc000028fc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:40 server.go:3139: http: panic serving 127.0.0.1:54515: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 61 [running]:
+net/http.(*conn).serve.func1(0xc000125e00)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0002a7bc0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc000186b60, 0x44fc4c0, 0xc0001db540, 0xc00012d950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc000186b60, 0xc000172e00, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc000186b60, 0xc000172e00)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc000186b60, 0xc000172e00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc000186b60, 0xc000172e00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc000186b60, 0xc000172e00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000125e00, 0x45a8080, 0xc0001db340)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:40 server.go:3139: http: panic serving 127.0.0.1:54516: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 69 [running]:
+net/http.(*conn).serve.func1(0xc0000fa280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0002ee2d0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc00029c700, 0x44fc4c0, 0xc000029600, 0xc00012d950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc00029c700, 0xc0000a4e00, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc00029c700, 0xc0000a4e00)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc00029c700, 0xc0000a4e00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc00029c700, 0xc0000a4e00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc00029c700, 0xc0000a4e00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000fa280, 0x45a8080, 0xc00020a200)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:41 server.go:3139: http: panic serving 127.0.0.1:54517: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 64 [running]:
+net/http.(*conn).serve.func1(0xc000125ea0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0001fced0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc000186c40, 0x44fc4c0, 0xc0001db840, 0xc000127950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc000186c40, 0xc000296a00, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc000186c40, 0xc000296a00)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc000186c40, 0xc000296a00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc000186c40, 0xc000296a00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc000186c40, 0xc000296a00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000125ea0, 0x45a8080, 0xc000029840)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:41 server.go:3139: http: panic serving 127.0.0.1:54518: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 65 [running]:
+net/http.(*conn).serve.func1(0xc000125f40)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0001fcfc0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc0000baa80, 0x44fc4c0, 0xc00020a400, 0xc000129950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc0000baa80, 0xc000172f00, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc0000baa80, 0xc000172f00)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc0000baa80, 0xc000172f00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc0000baa80, 0xc000172f00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc0000baa80, 0xc000172f00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000125f40, 0x45a8080, 0xc0001db640)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:41 server.go:3139: http: panic serving 127.0.0.1:54519: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 84 [running]:
+net/http.(*conn).serve.func1(0xc000286140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0002eeb40)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc00029c7e0, 0x44fc4c0, 0xc000029ac0, 0xc00012d950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc00029c7e0, 0xc000296b00, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc00029c7e0, 0xc000296b00)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc00029c7e0, 0xc000296b00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc00029c7e0, 0xc000296b00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc00029c7e0, 0xc000296b00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000286140, 0x45a8080, 0xc0000298c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:41 server.go:3139: http: panic serving 127.0.0.1:54520: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 87 [running]:
+net/http.(*conn).serve.func1(0xc0002861e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0001fd0e0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc0000bab60, 0x44fc4c0, 0xc00020a740, 0xc0002cd950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc0000bab60, 0xc0000a5000, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc0000bab60, 0xc0000a5000)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc0000bab60, 0xc0000a5000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc0000bab60, 0xc0000a5000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc0000bab60, 0xc0000a5000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002861e0, 0x45a8080, 0xc00020a500)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:41 server.go:3139: http: panic serving 127.0.0.1:54521: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 88 [running]:
+net/http.(*conn).serve.func1(0xc000286280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0001fd7d0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc000186d20, 0x44fc4c0, 0xc0001dbe00, 0xc0002cd950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc000186d20, 0xc000296d00, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc000186d20, 0xc000296d00)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc000186d20, 0xc000296d00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc000186d20, 0xc000296d00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc000186d20, 0xc000296d00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000286280, 0x45a8080, 0xc000029d00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:41 server.go:3139: http: panic serving 127.0.0.1:54522: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 89 [running]:
+net/http.(*conn).serve.func1(0xc000286320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0002ef410)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc00029c8c0, 0x44fc4c0, 0xc000029f80, 0xc00012d950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc00029c8c0, 0xc000296e00, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc00029c8c0, 0xc000296e00)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc00029c8c0, 0xc000296e00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc00029c8c0, 0xc000296e00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc00029c8c0, 0xc000296e00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000286320, 0x45a8080, 0xc000029d80)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:41 server.go:3139: http: panic serving 127.0.0.1:54523: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 74 [running]:
+net/http.(*conn).serve.func1(0xc0000fa320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0002efb60)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc00029c9a0, 0x44fc4c0, 0xc0002f63c0, 0xc00012d950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc00029c9a0, 0xc000297000, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc00029c9a0, 0xc000297000)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc00029c9a0, 0xc000297000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc00029c9a0, 0xc000297000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc00029c9a0, 0xc000297000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000fa320, 0x45a8080, 0xc0002f61c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:41 server.go:3139: http: panic serving 127.0.0.1:54524: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 75 [running]:
+net/http.(*conn).serve.func1(0xc0000fa3c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0003c0270)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc00029ca80, 0x44fc4c0, 0xc0002f6780, 0xc00012d950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc00029ca80, 0xc0000a5200, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc00029ca80, 0xc0000a5200)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc00029ca80, 0xc0000a5200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc00029ca80, 0xc0000a5200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc00029ca80, 0xc0000a5200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000fa3c0, 0x45a8080, 0xc00020a8c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:41 server.go:3139: http: panic serving 127.0.0.1:54525: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 102 [running]:
+net/http.(*conn).serve.func1(0xc000370000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0001fdf80)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc000186e00, 0x44fc4c0, 0xc00035e240, 0xc0002cd950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc000186e00, 0xc000173200, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc000186e00, 0xc000173200)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc000186e00, 0xc000173200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc000186e00, 0xc000173200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc000186e00, 0xc000173200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000370000, 0x45a8080, 0xc00035e040)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:41 server.go:3139: http: panic serving 127.0.0.1:54526: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 76 [running]:
+net/http.(*conn).serve.func1(0xc0000fa460)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0003c0300)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc000186ee0, 0x44fc4c0, 0xc00035e680, 0xc0002cd950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc000186ee0, 0xc000173400, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc000186ee0, 0xc000173400)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc000186ee0, 0xc000173400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc000186ee0, 0xc000173400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc000186ee0, 0xc000173400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000fa460, 0x45a8080, 0xc00035e480)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:41 server.go:3139: http: panic serving 127.0.0.1:54527: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 77 [running]:
+net/http.(*conn).serve.func1(0xc0000fa500)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc000372750)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc0000bac40, 0x44fc4c0, 0xc00020ab40, 0xc0002cf950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc0000bac40, 0xc0000a5300, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc0000bac40, 0xc0000a5300)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc0000bac40, 0xc0000a5300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc0000bac40, 0xc0000a5300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc0000bac40, 0xc0000a5300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000fa500, 0x45a8080, 0xc00020a940)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:41 server.go:3139: http: panic serving 127.0.0.1:54528: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 80 [running]:
+net/http.(*conn).serve.func1(0xc0000fa5a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc00023a570)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc0000bad20, 0x44fc4c0, 0xc00020ae40, 0xc000237950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc0000bad20, 0xc0000a5500, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc0000bad20, 0xc0000a5500)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc0000bad20, 0xc0000a5500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc0000bad20, 0xc0000a5500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc0000bad20, 0xc0000a5500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000fa5a0, 0x45a8080, 0xc00020ac40)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:43 server.go:3139: http: panic serving 127.0.0.1:54529: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 96 [running]:
+net/http.(*conn).serve.func1(0xc0002863c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc00023acc0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc0000bae00, 0x44fc4c0, 0xc00020b280, 0xc000237950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc0000bae00, 0xc0000a5700, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc0000bae00, 0xc0000a5700)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc0000bae00, 0xc0000a5700)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc0000bae00, 0xc0000a5700)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc0000bae00, 0xc0000a5700)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002863c0, 0x45a8080, 0xc00020b080)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:43 server.go:3139: http: panic serving 127.0.0.1:54530: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 97 [running]:
+net/http.(*conn).serve.func1(0xc000286460)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc00023b3b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc0000baee0, 0x44fc4c0, 0xc00020b640, 0xc000237950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc0000baee0, 0xc000297300, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc0000baee0, 0xc000297300)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc0000baee0, 0xc000297300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc0000baee0, 0xc000297300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc0000baee0, 0xc000297300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000286460, 0x45a8080, 0xc0002f6a40)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:43 server.go:3139: http: panic serving 127.0.0.1:54531: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 119 [running]:
+net/http.(*conn).serve.func1(0xc0000fa640)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc00023bbc0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc0000bafc0, 0x44fc4c0, 0xc00020ba80, 0xc000237950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc0000bafc0, 0xc0000a5a00, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc0000bafc0, 0xc0000a5a00)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc0000bafc0, 0xc0000a5a00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc0000bafc0, 0xc0000a5a00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc0000bafc0, 0xc0000a5a00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000fa640, 0x45a8080, 0xc00020b880)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:43 server.go:3139: http: panic serving 127.0.0.1:54532: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 107 [running]:
+net/http.(*conn).serve.func1(0xc0003700a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0003c0b70)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc00029cb60, 0x44fc4c0, 0xc0002f6cc0, 0xc00012d950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc00029cb60, 0xc0000a5c00, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc00029cb60, 0xc0000a5c00)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc00029cb60, 0xc0000a5c00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc00029cb60, 0xc0000a5c00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc00029cb60, 0xc0000a5c00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0003700a0, 0x45a8080, 0xc00020bcc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:43 server.go:3139: http: panic serving 127.0.0.1:54533: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 108 [running]:
+net/http.(*conn).serve.func1(0xc000370140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc00043e0c0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc00029cc40, 0x44fc4c0, 0xc0002f7080, 0xc00012d950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc00029cc40, 0xc000297400, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc00029cc40, 0xc000297400)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc00029cc40, 0xc000297400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc00029cc40, 0xc000297400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc00029cc40, 0xc000297400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000370140, 0x45a8080, 0xc0002f6ac0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:43 server.go:3139: http: panic serving 127.0.0.1:54534: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 146 [running]:
+net/http.(*conn).serve.func1(0xc00046c000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc00043e870)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc000486000, 0x44fc4c0, 0xc000438340, 0xc00012d950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc000486000, 0xc000476000, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc000486000, 0xc000476000)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc000486000, 0xc000476000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc000486000, 0xc000476000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc000486000, 0xc000476000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00046c000, 0x45a8080, 0xc000438140)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:54 server.go:3139: http: panic serving 127.0.0.1:54535: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 137 [running]:
+net/http.(*conn).serve.func1(0xc00046c0a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0002a6300)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc000186c40, 0x44fc4c0, 0xc00009e400, 0xc0000db950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc000186c40, 0xc0000a5100, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc000186c40, 0xc0000a5100)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc000186c40, 0xc0000a5100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc000186c40, 0xc0000a5100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc000186c40, 0xc0000a5100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00046c0a0, 0x45a8080, 0xc00020a000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:54 server.go:3139: http: panic serving 127.0.0.1:54536: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 138 [running]:
+net/http.(*conn).serve.func1(0xc00046c140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc0002a6a50)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc000186d20, 0x44fc4c0, 0xc00009e780, 0xc000237950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc000186d20, 0xc0000a4000, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc000186d20, 0xc0000a4000)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc000186d20, 0xc0000a4000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc000186d20, 0xc0000a4000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc000186d20, 0xc0000a4000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00046c140, 0x45a8080, 0xc000438000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:31:54 server.go:3139: http: panic serving 127.0.0.1:54540: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 198 [running]:
+net/http.(*conn).serve.func1(0xc00046c820)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3e00, 0xc00023a930)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78d0, 0xc000186e00, 0x44fc4c0, 0xc00009ebc0, 0xc000237950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78d0, 0xc000186e00, 0xc0000a5200, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x3b8
+todo/app/controllers.parseURL.func1(0x45a78d0, 0xc000186e00, 0xc0000a5200)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a78d0, 0xc000186e00, 0xc0000a5200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78d0, 0xc000186e00, 0xc0000a5200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000186000, 0x45a78d0, 0xc000186e00, 0xc0000a5200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00046c820, 0x45a8080, 0xc00009e9c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:33:22 server.go:3139: http: panic serving 127.0.0.1:54553: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc00010f4a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc00019e6c0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc000162460, 0x44fc480, 0xc000028d80, 0xc000173950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc000162460, 0xc0000a0100, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc000162460, 0xc0000a0100)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc000162460, 0xc0000a0100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc000162460, 0xc0000a0100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc000162460, 0xc0000a0100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010f4a0, 0x45a8060, 0xc000096000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:33:22 server.go:3139: http: panic serving 127.0.0.1:54554: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc00010f540)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc0000e54d0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc0000b4380, 0x44fc480, 0xc000097180, 0xc000117950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc0000b4380, 0xc00014e700, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc0000b4380, 0xc00014e700)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc0000b4380, 0xc00014e700)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc0000b4380, 0xc00014e700)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc0000b4380, 0xc00014e700)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010f540, 0x45a8060, 0xc0000285c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:33:22 server.go:3139: http: panic serving 127.0.0.1:54555: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 26 [running]:
+net/http.(*conn).serve.func1(0xc0000e0140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc0000e5c80)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc0000b4460, 0x44fc480, 0xc0000975c0, 0xc000117950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc0000b4460, 0xc0000a0200, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc0000b4460, 0xc0000a0200)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc0000b4460, 0xc0000a0200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc0000b4460, 0xc0000a0200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc0000b4460, 0xc0000a0200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000e0140, 0x45a8060, 0xc0000973c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:33:23 server.go:3139: http: panic serving 127.0.0.1:54556: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 29 [running]:
+net/http.(*conn).serve.func1(0xc0000e01e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc00019e7b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc0000b4540, 0x44fc480, 0xc000097a00, 0xc000117950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc0000b4540, 0xc00014eb00, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc0000b4540, 0xc00014eb00)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc0000b4540, 0xc00014eb00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc0000b4540, 0xc00014eb00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc0000b4540, 0xc00014eb00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000e01e0, 0x45a8060, 0xc000028fc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:33:23 server.go:3139: http: panic serving 127.0.0.1:54557: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 30 [running]:
+net/http.(*conn).serve.func1(0xc0000e0280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc0000feb10)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc0000b4620, 0x44fc480, 0xc000097d00, 0xc000117950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc0000b4620, 0xc0000a0400, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc0000b4620, 0xc0000a0400)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc0000b4620, 0xc0000a0400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc0000b4620, 0xc0000a0400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc0000b4620, 0xc0000a0400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000e0280, 0x45a8060, 0xc000097800)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:33:23 server.go:3139: http: panic serving 127.0.0.1:54558: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 50 [running]:
+net/http.(*conn).serve.func1(0xc00010f720)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc000288060)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc000162540, 0x44fc480, 0xc000029300, 0xc000111950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc000162540, 0xc00014ec00, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc000162540, 0xc00014ec00)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc000162540, 0xc00014ec00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc000162540, 0xc00014ec00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc000162540, 0xc00014ec00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010f720, 0x45a8060, 0xc000029100)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:33:28 server.go:3139: http: panic serving 127.0.0.1:54560: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc0000e0320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc0000fec90)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc0002cc000, 0x44fc480, 0xc0002842c0, 0xc0002d9950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc0002cc000, 0xc0000a0500, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc0002cc000, 0xc0000a0500)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc0002cc000, 0xc0000a0500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc0002cc000, 0xc0000a0500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc0002cc000, 0xc0000a0500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000e0320, 0x45a8060, 0xc000097f40)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:33:28 server.go:3139: http: panic serving 127.0.0.1:54561: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 66 [running]:
+net/http.(*conn).serve.func1(0xc0002b0000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc000288e70)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc0002cc0e0, 0x44fc480, 0xc0002845c0, 0xc0002db950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc0002cc0e0, 0xc0002ba000, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc0002cc0e0, 0xc0002ba000)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc0002cc0e0, 0xc0002ba000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc0002cc0e0, 0xc0002ba000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc0002cc0e0, 0xc0002ba000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002b0000, 0x45a8060, 0xc0002840c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:33:28 server.go:3139: http: panic serving 127.0.0.1:54562: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 71 [running]:
+net/http.(*conn).serve.func1(0xc0002b00a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc0000fed80)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc0002cc1c0, 0x44fc480, 0xc000284a00, 0xc0002db950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc0002cc1c0, 0xc0002ba100, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc0002cc1c0, 0xc0002ba100)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc0002cc1c0, 0xc0002ba100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc0002cc1c0, 0xc0002ba100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc0002cc1c0, 0xc0002ba100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002b00a0, 0x45a8060, 0xc000284800)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:33:58 server.go:3139: http: panic serving 127.0.0.1:54564: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 53 [running]:
+net/http.(*conn).serve.func1(0xc00010f7c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc00019f740)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc000162620, 0x44fc480, 0xc000029740, 0xc000111950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc000162620, 0xc00014ed00, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc000162620, 0xc00014ed00)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc000162620, 0xc00014ed00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc000162620, 0xc00014ed00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc000162620, 0xc00014ed00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010f7c0, 0x45a8060, 0xc000029480)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:33:58 server.go:3139: http: panic serving 127.0.0.1:54565: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 54 [running]:
+net/http.(*conn).serve.func1(0xc00010f860)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc0000ff4d0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc0000b4700, 0x44fc480, 0xc00022c340, 0xc0002db950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc0000b4700, 0xc00014ee00, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc0000b4700, 0xc00014ee00)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc0000b4700, 0xc00014ee00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc0000b4700, 0xc00014ee00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc0000b4700, 0xc00014ee00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010f860, 0x45a8060, 0xc000029500)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:33:58 server.go:3139: http: panic serving 127.0.0.1:54566: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 38 [running]:
+net/http.(*conn).serve.func1(0xc0000e03c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc000289c20)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc0002cc2a0, 0x44fc480, 0xc000284c80, 0xc0002d5950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc0002cc2a0, 0xc0000a0600, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc0002cc2a0, 0xc0000a0600)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc0002cc2a0, 0xc0000a0600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc0002cc2a0, 0xc0000a0600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc0002cc2a0, 0xc0000a0600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000e03c0, 0x45a8060, 0xc00022c580)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:34:10 server.go:3139: http: panic serving 127.0.0.1:54567: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 57 [running]:
+net/http.(*conn).serve.func1(0xc00010f900)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc00019ff50)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc000162700, 0x44fc480, 0xc000029b80, 0xc000111950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc000162700, 0xc0000a0700, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc000162700, 0xc0000a0700)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc000162700, 0xc0000a0700)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc000162700, 0xc0000a0700)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc000162700, 0xc0000a0700)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010f900, 0x45a8060, 0xc00022c600)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:34:10 server.go:3139: http: panic serving 127.0.0.1:54568: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 58 [running]:
+net/http.(*conn).serve.func1(0xc00010f9a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc000289cb0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc0001627e0, 0x44fc480, 0xc000029f40, 0xc000111950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc0001627e0, 0xc00014ef00, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc0001627e0, 0xc00014ef00)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc0001627e0, 0xc00014ef00)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc0001627e0, 0xc00014ef00)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc0001627e0, 0xc00014ef00)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010f9a0, 0x45a8060, 0xc000029980)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:34:10 server.go:3139: http: panic serving 127.0.0.1:54569: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 63 [running]:
+net/http.(*conn).serve.func1(0xc00010fa40)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc000312db0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc0001628c0, 0x44fc480, 0xc0003142c0, 0xc000111950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc0001628c0, 0xc00014f200, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc0001628c0, 0xc00014f200)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc0001628c0, 0xc00014f200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc0001628c0, 0xc00014f200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc0001628c0, 0xc00014f200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010fa40, 0x45a8060, 0xc0003140c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:34:15 server.go:3139: http: panic serving 127.0.0.1:54570: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 76 [running]:
+net/http.(*conn).serve.func1(0xc0002b0140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc000265860)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc0000b47e0, 0x44fc480, 0xc00022c980, 0xc000215950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc0000b47e0, 0xc0000a0800, 0x7)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc0000b47e0, 0xc0000a0800)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc0000b47e0, 0xc0000a0800)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc0000b47e0, 0xc0000a0800)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc0000b47e0, 0xc0000a0800)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002b0140, 0x45a8060, 0xc000314500)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:34:15 server.go:3139: http: panic serving 127.0.0.1:54571: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 77 [running]:
+net/http.(*conn).serve.func1(0xc0002b01e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc0003901b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc0000b48c0, 0x44fc480, 0xc00022cd40, 0xc0002db950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc0000b48c0, 0xc0002ba200, 0x7)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc0000b48c0, 0xc0002ba200)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc0000b48c0, 0xc0002ba200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc0000b48c0, 0xc0002ba200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc0000b48c0, 0xc0002ba200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002b01e0, 0x45a8060, 0xc000284f80)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:34:15 server.go:3139: http: panic serving 127.0.0.1:54572: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 79 [running]:
+net/http.(*conn).serve.func1(0xc0002b0280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc000313a70)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc0002cc460, 0x44fc480, 0xc000285380, 0xc0002db950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc0002cc460, 0xc0002ba400, 0x7)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc0002cc460, 0xc0002ba400)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc0002cc460, 0xc0002ba400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc0002cc460, 0xc0002ba400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc0002cc460, 0xc0002ba400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002b0280, 0x45a8060, 0xc0002851c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:34:16 server.go:3139: http: panic serving 127.0.0.1:54573: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 43 [running]:
+net/http.(*conn).serve.func1(0xc0000e05a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc0003481e0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc000162b60, 0x44fc480, 0xc000315080, 0xc0002d5950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc000162b60, 0xc00014f500, 0x7)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc000162b60, 0xc00014f500)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc000162b60, 0xc00014f500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc000162b60, 0xc00014f500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc000162b60, 0xc00014f500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000e05a0, 0x45a8060, 0xc000314e80)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:34:16 server.go:3139: http: panic serving 127.0.0.1:54574: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 44 [running]:
+net/http.(*conn).serve.func1(0xc0000e0640)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc000400600)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc0000b49a0, 0x44fc480, 0xc00022d040, 0xc0002d9950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc0000b49a0, 0xc0000a0900, 0x7)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc0000b49a0, 0xc0000a0900)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc0000b49a0, 0xc0000a0900)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc0000b49a0, 0xc0000a0900)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc0000b49a0, 0xc0000a0900)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000e0640, 0x45a8060, 0xc00022ce40)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:34:16 server.go:3139: http: panic serving 127.0.0.1:54575: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 88 [running]:
+net/http.(*conn).serve.func1(0xc00010fae0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc000348990)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc000162c40, 0x44fc480, 0xc0003154c0, 0xc0002d5950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc000162c40, 0xc00014f600, 0x7)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc000162c40, 0xc00014f600)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc000162c40, 0xc00014f600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc000162c40, 0xc00014f600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc000162c40, 0xc00014f600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010fae0, 0x45a8060, 0xc0003152c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:35:38 server.go:3139: http: panic serving 127.0.0.1:54588: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc00010f540)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc000257b30)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc0002322a0, 0x44fc480, 0xc00020cf40, 0xc000179950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc0002322a0, 0xc000236300, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc0002322a0, 0xc000236300)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc0002322a0, 0xc000236300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc0002322a0, 0xc000236300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc0002322a0, 0xc000236300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010f540, 0x45a8060, 0xc0000285c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:35:38 server.go:3139: http: panic serving 127.0.0.1:54587: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc00010f4a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc000286330)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc0000b0a80, 0x44fc480, 0xc000282380, 0xc00017d950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc0000b0a80, 0xc00014e600, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc0000b0a80, 0xc00014e600)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc0000b0a80, 0xc00014e600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc0000b0a80, 0xc00014e600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc0000b0a80, 0xc00014e600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010f4a0, 0x45a8060, 0xc000096000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 12:35:38 server.go:3139: http: panic serving 127.0.0.1:54589: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 44 [running]:
+net/http.(*conn).serve.func1(0xc000252140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3dc0, 0xc0001ac2a0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a78b0, 0xc000232380, 0x44fc480, 0xc00020d380, 0xc00027d950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a78b0, 0xc000232380, 0xc000236400, 0x1)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a78b0, 0xc000232380, 0xc000236400)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a78b0, 0xc000232380, 0xc000236400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a78b0, 0xc000232380, 0xc000236400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a78b0, 0xc000232380, 0xc000236400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000252140, 0x45a8060, 0xc00020d180)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:12:59 server.go:3139: http: panic serving 127.0.0.1:54907: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc0001c6000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc0003fd140)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc0001b9ea0, 0x44fc2c0, 0xc0003f2bc0, 0xc000133950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc0001b9ea0, 0xc0003c5600, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc0001b9ea0, 0xc0003c5600)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a7750, 0xc0001b9ea0, 0xc0003c5600)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc0001b9ea0, 0xc0003c5600)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a7750, 0xc0001b9ea0, 0xc0003c5600)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001c6000, 0x45a7f00, 0xc0001901c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:12:59 server.go:3139: http: panic serving 127.0.0.1:54905: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0000b9540)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc0003fc690)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc0001b8000, 0x44fc2c0, 0xc0003f2180, 0xc00035d950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc0001b8000, 0xc000328900, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc0001b8000, 0xc000328900)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a7750, 0xc0001b8000, 0xc000328900)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc0001b8000, 0xc000328900)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a7750, 0xc0001b8000, 0xc000328900)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000b9540, 0x45a7f00, 0xc000190000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:12:59 server.go:3139: http: panic serving 127.0.0.1:54906: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc0000b95e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc00009bb00)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc0001160e0, 0x44fc2c0, 0xc0000281c0, 0xc0000bd950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc0001160e0, 0xc0001a2200, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc0001160e0, 0xc0001a2200)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a7750, 0xc0001160e0, 0xc0001a2200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc0001160e0, 0xc0001a2200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a7750, 0xc0001160e0, 0xc0001a2200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000b95e0, 0x45a7f00, 0xc0000d8540)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:12:59 server.go:3139: http: panic serving 127.0.0.1:54908: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 230 [running]:
+net/http.(*conn).serve.func1(0xc0000b8320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc00012c780)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc00043e000, 0x44fc2c0, 0xc0000d86c0, 0xc000363950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc00043e000, 0xc0003c4000, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc00043e000, 0xc0003c4000)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a7750, 0xc00043e000, 0xc0003c4000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc00043e000, 0xc0003c4000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a7750, 0xc00043e000, 0xc0003c4000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000b8320, 0x45a7f00, 0xc0000d8100)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:13:00 server.go:3139: http: panic serving 127.0.0.1:54909: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 233 [running]:
+net/http.(*conn).serve.func1(0xc0000b8960)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc00012c990)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc0004da000, 0x44fc2c0, 0xc000190400, 0xc0000bb950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc0004da000, 0xc000328000, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc0004da000, 0xc000328000)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a7750, 0xc0004da000, 0xc000328000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc0004da000, 0xc000328000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a7750, 0xc0004da000, 0xc000328000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000b8960, 0x45a7f00, 0xc0001900c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:13:00 server.go:3139: http: panic serving 127.0.0.1:54910: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 234 [running]:
+net/http.(*conn).serve.func1(0xc0000b8a00)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc00012d0e0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc00043e0e0, 0x44fc2c0, 0xc0000d8c40, 0xc0000bb950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc00043e0e0, 0xc0003c4100, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc00043e0e0, 0xc0003c4100)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a7750, 0xc00043e0e0, 0xc0003c4100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc00043e0e0, 0xc0003c4100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a7750, 0xc00043e0e0, 0xc0003c4100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000b8a00, 0x45a7f00, 0xc0000d8900)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:13:00 server.go:3139: http: panic serving 127.0.0.1:54911: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 237 [running]:
+net/http.(*conn).serve.func1(0xc0000b8b40)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc000160720)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc00043e1c0, 0x44fc2c0, 0xc0000d9080, 0xc0000bb950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc00043e1c0, 0xc0003c4200, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc00043e1c0, 0xc0003c4200)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000098ff0, 0x45a7750, 0xc00043e1c0, 0xc0003c4200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc00043e1c0, 0xc0003c4200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000116000, 0x45a7750, 0xc00043e1c0, 0xc0003c4200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000b8b40, 0x45a7f00, 0xc0000d8e80)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:14:36 server.go:3139: http: panic serving 127.0.0.1:54938: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc00010f4a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc000094660)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc0000b2000, 0x44fc2c0, 0xc000096240, 0xc000111950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc0000b2000, 0xc00014e300, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc0000b2000, 0xc00014e300)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a7750, 0xc0000b2000, 0xc00014e300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc0000b2000, 0xc00014e300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a7750, 0xc0000b2000, 0xc00014e300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010f4a0, 0x45a7f00, 0xc000096000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:14:36 server.go:3139: http: panic serving 127.0.0.1:54939: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc00010f540)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc000101950)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc0000b20e0, 0x44fc2c0, 0xc000096580, 0xc000117950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc0000b20e0, 0xc00014e200, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc0000b20e0, 0xc00014e200)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a7750, 0xc0000b20e0, 0xc00014e200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc0000b20e0, 0xc00014e200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a7750, 0xc0000b20e0, 0xc00014e200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010f540, 0x45a7f00, 0xc0000285c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:14:36 server.go:3139: http: panic serving 127.0.0.1:54940: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc00018c000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc000101a40)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc0001c0000, 0x44fc2c0, 0xc0001802c0, 0xc0001cd950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc0001c0000, 0xc0001a8000, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc0001c0000, 0xc0001a8000)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a7750, 0xc0001c0000, 0xc0001a8000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc0001c0000, 0xc0001a8000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a7750, 0xc0001c0000, 0xc0001a8000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00018c000, 0x45a7f00, 0xc000180080)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:14:38 server.go:3139: http: panic serving 127.0.0.1:54942: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 37 [running]:
+net/http.(*conn).serve.func1(0xc00018c0a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc000095440)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc0000b21c0, 0x44fc2c0, 0xc000096900, 0xc000117950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc0000b21c0, 0xc0000ee000, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc0000b21c0, 0xc0000ee000)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a7750, 0xc0000b21c0, 0xc0000ee000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc0000b21c0, 0xc0000ee000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a7750, 0xc0000b21c0, 0xc0000ee000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00018c0a0, 0x45a7f00, 0xc000096700)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:14:38 server.go:3139: http: panic serving 127.0.0.1:54943: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 38 [running]:
+net/http.(*conn).serve.func1(0xc00018c140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc000095b30)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc0000b22a0, 0x44fc2c0, 0xc000096cc0, 0xc000117950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc0000b22a0, 0xc0001a8100, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc0000b22a0, 0xc0001a8100)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a7750, 0xc0000b22a0, 0xc0001a8100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc0000b22a0, 0xc0001a8100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a7750, 0xc0000b22a0, 0xc0001a8100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00018c140, 0x45a7f00, 0xc0001803c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:14:38 server.go:3139: http: panic serving 127.0.0.1:54944: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0xc00010f5e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc000186870)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc0001620e0, 0x44fc2c0, 0xc000028ac0, 0xc0001cd950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc0001620e0, 0xc00014e400, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc0001620e0, 0xc00014e400)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a7750, 0xc0001620e0, 0xc00014e400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc0001620e0, 0xc00014e400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a7750, 0xc0001620e0, 0xc00014e400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010f5e0, 0x45a7f00, 0xc0000288c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:14:43 server.go:3139: http: panic serving 127.0.0.1:54945: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 12 [running]:
+net/http.(*conn).serve.func1(0xc00010f680)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc0002189f0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc0001621c0, 0x44fc2c0, 0xc000028e40, 0xc0001cd950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc0001621c0, 0xc0001a8200, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc0001621c0, 0xc0001a8200)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a7750, 0xc0001621c0, 0xc0001a8200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc0001621c0, 0xc0001a8200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a7750, 0xc0001621c0, 0xc0001a8200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010f680, 0x45a7f00, 0xc000180500)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:14:43 server.go:3139: http: panic serving 127.0.0.1:54946: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 13 [running]:
+net/http.(*conn).serve.func1(0xc00010f720)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc000219110)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc0001622a0, 0x44fc2c0, 0xc000029200, 0xc0001cd950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc0001622a0, 0xc00014e500, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc0001622a0, 0xc00014e500)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a7750, 0xc0001622a0, 0xc00014e500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc0001622a0, 0xc00014e500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a7750, 0xc0001622a0, 0xc00014e500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010f720, 0x45a7f00, 0xc000028c40)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:14:43 server.go:3139: http: panic serving 127.0.0.1:54947: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 51 [running]:
+net/http.(*conn).serve.func1(0xc00010f7c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc0002198c0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc000162380, 0x44fc2c0, 0xc000029640, 0xc0001cd950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc000162380, 0xc00014e700, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc000162380, 0xc00014e700)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a7750, 0xc000162380, 0xc00014e700)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc000162380, 0xc00014e700)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a7750, 0xc000162380, 0xc00014e700)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010f7c0, 0x45a7f00, 0xc000029440)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:15:13 server.go:3139: http: panic serving 127.0.0.1:54959: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 26 [running]:
+net/http.(*conn).serve.func1(0xc000290000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc0002943c0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc0000b2380, 0x44fc2c0, 0xc000097100, 0xc000117950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc0000b2380, 0xc00014e800, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc0000b2380, 0xc00014e800)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a7750, 0xc0000b2380, 0xc00014e800)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc0000b2380, 0xc00014e800)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a7750, 0xc0000b2380, 0xc00014e800)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000290000, 0x45a7f00, 0xc000029880)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:15:13 server.go:3139: http: panic serving 127.0.0.1:54960: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 27 [running]:
+net/http.(*conn).serve.func1(0xc0002900a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc000186ff0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc0001c00e0, 0x44fc2c0, 0xc000180700, 0xc0001cf950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc0001c00e0, 0xc0000ee100, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc0001c00e0, 0xc0000ee100)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a7750, 0xc0001c00e0, 0xc0000ee100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc0001c00e0, 0xc0000ee100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a7750, 0xc0001c00e0, 0xc0000ee100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002900a0, 0x45a7f00, 0xc000096f00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:15:13 server.go:3139: http: panic serving 127.0.0.1:54961: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 30 [running]:
+net/http.(*conn).serve.func1(0xc000290140)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc000187710)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc0001c01c0, 0x44fc2c0, 0xc000180ac0, 0xc0001cf950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc0001c01c0, 0xc0000ee200, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc0001c01c0, 0xc0000ee200)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a7750, 0xc0001c01c0, 0xc0000ee200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc0001c01c0, 0xc0000ee200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a7750, 0xc0001c01c0, 0xc0000ee200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000290140, 0x45a7f00, 0xc000097340)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:16:13 server.go:3139: http: panic serving 127.0.0.1:55021: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 54 [running]:
+net/http.(*conn).serve.func1(0xc00010f860)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc000187f20)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc0001c02a0, 0x44fc2c0, 0xc000180f00, 0xc0001cf950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc0001c02a0, 0xc00014e900, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc0001c02a0, 0xc00014e900)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a7750, 0xc0001c02a0, 0xc00014e900)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc0001c02a0, 0xc00014e900)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a7750, 0xc0001c02a0, 0xc00014e900)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00010f860, 0x45a7f00, 0xc000029900)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:16:13 server.go:3139: http: panic serving 127.0.0.1:55022: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 43 [running]:
+net/http.(*conn).serve.func1(0xc00018c1e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc00025e0f0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc000162460, 0x44fc2c0, 0xc000029b00, 0xc0001cd950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc000162460, 0xc0001a8300, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc000162460, 0xc0001a8300)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a7750, 0xc000162460, 0xc0001a8300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc000162460, 0xc0001a8300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a7750, 0xc000162460, 0xc0001a8300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00018c1e0, 0x45a7f00, 0xc000180d00)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:16:13 server.go:3139: http: panic serving 127.0.0.1:55023: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 46 [running]:
+net/http.(*conn).serve.func1(0xc00018c280)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc0001f66f0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc0001c0380, 0x44fc2c0, 0xc000181340, 0xc0001cf950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc0001c0380, 0xc0001a8400, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc0001c0380, 0xc0001a8400)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a7750, 0xc0001c0380, 0xc0001a8400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc0001c0380, 0xc0001a8400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a7750, 0xc0001c0380, 0xc0001a8400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00018c280, 0x45a7f00, 0xc000181140)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:21:13 server.go:3139: http: panic serving 127.0.0.1:55047: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 49 [running]:
+net/http.(*conn).serve.func1(0xc00018c320)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc00025e180)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc0000b2460, 0x44fc2c0, 0xc000097600, 0xc000117950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc0000b2460, 0xc0000ee300, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc0000b2460, 0xc0000ee300)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a7750, 0xc0000b2460, 0xc0000ee300)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc0000b2460, 0xc0000ee300)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a7750, 0xc0000b2460, 0xc0000ee300)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00018c320, 0x45a7f00, 0xc000097400)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:21:13 server.go:3139: http: panic serving 127.0.0.1:55048: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 66 [running]:
+net/http.(*conn).serve.func1(0xc00018c3c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc0001f6f00)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc0001c0460, 0x44fc2c0, 0xc000181740, 0xc0001cf950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc0001c0460, 0xc0001a8500, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc0001c0460, 0xc0001a8500)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a7750, 0xc0001c0460, 0xc0001a8500)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc0001c0460, 0xc0001a8500)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a7750, 0xc0001c0460, 0xc0001a8500)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc00018c3c0, 0x45a7f00, 0xc000181540)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/05/25 13:21:13 server.go:3139: http: panic serving 127.0.0.1:55049: open app/views/templates/praivate_navbar.html: no such file or directory
+goroutine 33 [running]:
+net/http.(*conn).serve.func1(0xc0002901e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x44d3c00, 0xc0002952f0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo/app/controllers.generateHTML(0x45a7750, 0xc0000b2540, 0x44fc2c0, 0xc000097980, 0xc000117950, 0x3, 0x3)
+	/Users/satoshun/goTodo/app/controllers/server.go:21 +0x2ce
+todo/app/controllers.todoEdit(0x45a7750, 0xc0000b2540, 0xc0000ee400, 0xe)
+	/Users/satoshun/goTodo/app/controllers/route_main.go:98 +0x41a
+todo/app/controllers.parseURL.func1(0x45a7750, 0xc0000b2540, 0xc0000ee400)
+	/Users/satoshun/goTodo/app/controllers/server.go:57 +0x105
+net/http.HandlerFunc.ServeHTTP(0xc000013010, 0x45a7750, 0xc0000b2540, 0xc0000ee400)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a7750, 0xc0000b2540, 0xc0000ee400)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000162000, 0x45a7750, 0xc0000b2540, 0xc0000ee400)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0002901e0, 0x45a7f00, 0xc000097780)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b

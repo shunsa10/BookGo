@@ -1,0 +1,104 @@
+"fmt"
+	"todo/app/models"
+
+// fmt.Println(config.Config.Port)
+	// fmt.Println(config.Config.SQLDriver)
+	// fmt.Println(config.Config.DbName)
+	// fmt.Println(config.Config.LogFile)
+
+	// log.Panicln("test")
+////////////////////////////////////////////////////////
+	//tableの作成
+	fmt.Println(models.Db)
+
+	//userの作成
+	u := &models.User{}
+	u.Name = "test"
+	u.Email = "test@example.com"
+	u.Password = "testtest"
+	fmt.Println(u)
+
+	u.CreateUser()
+
+//sqlite3 webapp.sql
+//SELECT * FROM users; 作成
+//////////////////////////////////////////////////////////
+// u, _ := models.GetUser(1)
+
+// 	fmt.Println(u)
+
+// 	//userの更新
+// 	u.Name = "Test2"
+// 	u.Email = "test2@example.com"
+// 	u.UpdateUser()
+// 	u, _ = models.GetUser(1)
+// 	fmt.Println(u)
+
+
+// 	//削除
+// 	u.DeleteUser()
+// 	u, _ = models.GetUser(1)
+// 	fmt.Println(u) //削除しているので初期値が帰ってくる
+ ////////////////////////////////////////////////////
+
+ //todoの作成
+// user, _ := models.GetUser(2)
+// user.CreateTodo("first Todo")
+
+//  sqlite> SELECT * FROM todos;
+// 1|first Todo|2|2021-05-19 06:59:09.365328+09:00
+////////////////////////////////////////////////////////
+
+// t, _ := models.GetTodo(1)
+// fmt.Println(t)
+//////////////////////////////////////////////////////////
+//新しく作成
+// user, _ := models.GetUser(2)
+// user.CreateTodo("second Todo")
+
+// todos, _ := models.GetTodos()
+// for _, v := range todos {
+// 	fmt.Println(v)
+// }
+
+// satoshun@satoushunnoMacBook-Air goTodo % go run main.go
+// {1 first Todo 2 2021-05-19 06:59:09.365328 +0900 +0900}
+// {2 second Todo 2 2021-05-19 08:17:32.190395 +0900 +0900}
+//一つずつ複数取得できた
+/////////////////////////////////////////////////////
+
+// //新しいユーザーでtodoを作成
+// user, _ := models.GetUser(3)
+// user.CreateTodo("thied Todo")
+
+// //user id2を取得して
+// user2, _ := models.GetUser(2)
+// //そのuserのtodoを取得
+// todos, _ := user2.GetTodoByUser()
+
+// for _, v := range todos {
+// 	fmt.Println(v)
+// }
+
+// user2, _ := models.GetUser(3)
+// todos, _ := user2.GetTodoByUser()
+// for _, v := range todos {
+// 	fmt.Println(v)
+// }
+///////////////////////////////////////////////
+//todoの更新
+
+// t, _ := models.GetTodo(1)
+// t.Content = "Update Todo"
+// t.UpdateTodo()
+
+// sqlite> SELECT * FROM todos;
+// 1|Update Todo|2|2021-05-19 06:59:09.365328+09:00
+// 2|second Todo|2|2021-05-19 08:17:32.190395+09:00
+// 3|thied Todo|3|2021-05-19 09:22:04.976204+09:00
+//1番のコンテントをファーストからUpdateに変更
+
+
+//todoの削除
+t, _ := models.GetTodo(3)
+t.DeleteTodo()

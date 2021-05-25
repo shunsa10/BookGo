@@ -1,0 +1,8 @@
+todoNew一覧を表示するindexぺージを作成
+
+<form role="form" action="/todos/save" method="post"> urlにmethod="postでリクエスト
+
+
+
+
+<!-- userの中のTodosをrangeで回して{{ .Content }}で表示 -->
